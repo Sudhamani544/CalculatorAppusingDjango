@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<div align='center'>
+<h1>result: {{result}}</h1>
+<br>
+<br>
+
+<form  method='post' action="http://127.0.0.1:8000/">
+{% csrf_token %}
+<!-- {{ form }}
+<input type="hidden" name="next" value="{{ request.path }}"> -->
+<button type="submit"><h2>back</h2></button>
+</form>
+
+</div>
+{%endblock%}

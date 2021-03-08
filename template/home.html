@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<div align='center'>
+<h1> calculator functionality using Django</h1>
+<form method='POST'>
+  {% csrf_token %}
+  <h2> Enter 1st number: <input type='text' name="num1"><br> </h2>
+  <h2> Enter 2nd number: <input type='text' name="num2"><br> </h2>
+  <h1><button type="submit" formaction="add"> add </button>
+  <button type="submit" formaction="minus"> minus </button>
+  <button type="submit" formaction="multiply"> multiply </button>
+  <button type="submit" formaction="divide"> divide </button></h1><br>
+  <button type="submit" formaction=""> refresh </button>
+</form>
+</div>
+{% endblock %}
